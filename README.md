@@ -1,18 +1,24 @@
-# AI Chat Support
+# Flashcard SaaS
 
-AI Chat Support is a web application that provides intelligent chat support using the Gemini API. Built with Next.js and styled using Material UI, this project offers a seamless user experience for interacting with AI-driven chat services.
+Flashcard SaaS is a web application designed to help users create, manage, and study flashcards efficiently. The project leverages modern web technologies to deliver a seamless user experience and robust functionality.
 
 ## Features
 
-- **Real-time Chat Support**: Engage in real-time conversations with AI for support and assistance.
-- **Responsive Design**: Optimized for various devices using Material UI components.
-- **Efficient API Integration**: Utilizes the Gemini API for robust AI capabilities.
+- **User Authentication**: Secure user login and registration using Clerk API.
+- **Flashcard Management**: Create, edit, and organize flashcards with ease.
+- **Payment Integration**: Subscription and payment processing via Stripe API.
+- **Real-time Data**: Store and sync data using Firebase.
+- **AI Assistance**: Utilize the Gemini API for enhanced learning experiences.
+- **Responsive Design**: Built with Material UI for a consistent and responsive interface.
 
 ## Tech Stack
 
-- **Next.js**: A React framework for building fast and scalable web applications.
-- **Gemini API**: Provides the AI capabilities for chat support.
-- **Material UI**: A popular React UI framework for designing responsive and visually appealing interfaces.
+- **Next.js**: A powerful React framework for server-side rendering and static site generation.
+- **Material UI**: Provides a set of React components that implement Google's Material Design.
+- **Gemini API**: Offers AI capabilities to enhance the learning experience.
+- **Stripe API**: Handles payment processing and subscription management.
+- **Clerk API**: Manages user authentication and session handling.
+- **Firebase**: Used for real-time database and hosting services.
 
 ## Getting Started
 
@@ -27,8 +33,8 @@ Follow these instructions to set up and run the project locally.
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/ai-chat-support.git
-    cd ai-chat-support
+    git clone https://github.com/yourusername/flashcard-saas.git
+    cd flashcard-saas
     ```
 
 2. **Install dependencies**:
@@ -39,9 +45,12 @@ Follow these instructions to set up and run the project locally.
     ```
 
 3. **Environment Variables**:
-   Create a `.env.local` file in the root directory and add your Gemini API key:
+   Create a `.env.local` file in the root directory and add the necessary API keys:
     ```plaintext
     GEMINI_API_KEY=your_gemini_api_key
+    STRIPE_API_KEY=your_stripe_api_key
+    CLERK_API_KEY=your_clerk_api_key
+    FIREBASE_API_KEY=your_firebase_api_key
     ```
 
 ### Running the Application
@@ -63,10 +72,3 @@ To deploy the application, consider using platforms such as Vercel or Netlify, w
 
 Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Contact
-
-For any inquiries or support, please contact [your-email@example.com](mailto:your-email@example.com).
